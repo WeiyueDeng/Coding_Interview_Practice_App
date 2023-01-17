@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'check_selection.js') }}"></script>
+
+<div class = "row instruction_div">
+    <div class = "col-2"></div>
+    <div class = "col instruction">You've selected the <span id = "level">{{level.level}}</span> difficulty and <span id ="topic">{{topic.topic}}</span> as the topic. Do you want to continue?</div>
+    <div class = "col-2"></div>
+</div>
+<div class = "row tips_div">
+    <div class = "col tips">To restart selection, hit “Reset Workflow” in the nav bar</div>
+</div>
+<div class = "row ">
+    <div class = "col"></div>
+    <div class = "col submit_btn_div" id="submit_btn_div">
+        <button id="submit_btn">Continue</button>
+    </div>
+    <div class = "col"></div>
+</div>
+
+{% endblock %}

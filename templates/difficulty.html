@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'difficulty.js') }}"></script>
+
+<div class = "row instruction_div">
+    <div class = "col"></div>
+    <div class = "col instruction">First, choose a difficulty</div>
+    <div class = "col"></div>
+</div>
+
+<div class = "row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class = "row difficulty_div">
+            <div class = "col easy_btn_div">
+                <button id = "easy_btn">Easy</button>
+            </div>
+            <div class = "col medium_btn_div">
+                <button id = "medium_btn">Medium</button>
+            </div>
+            <div class = "col hard_btn_div">
+                <button id = "hard_btn">Hard</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+{% endblock %}

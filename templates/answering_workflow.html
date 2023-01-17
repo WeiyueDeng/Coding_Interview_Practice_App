@@ -1,0 +1,16 @@
+{% extends "layout.html" %} {% block content %}
+<!-- Add image here -->
+<div
+  id="title"
+  class="display-6 w-75 mx-auto row pt-1 justify-content-center text-center"
+></div>
+<div id="hint" class="gray w-50 mx-auto row justify-content-center"></div>
+<div id="display" class="row mx-auto w-50 py-2 justify-content-center"></div>
+
+<div id="button" class="py-2 w-50 mx-auto row"></div>
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'answering_workflow.js') }}"
+></script>
+{% endblock %}

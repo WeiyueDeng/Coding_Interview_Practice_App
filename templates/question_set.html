@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block content %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'question_set.js') }}"
+></script>
+
+<div class="row refine_title_div">
+  <div class="col"></div>
+  <div class="col instruction h1">Question Refinement</div>
+  <div class="col"></div>
+</div>
+<div class="row tip_div">
+  <div class="col tip mb-4">
+    Choose the questions that you like from below. This helps us refine the
+    questions generated later
+  </div>
+</div>
+<div class="row questions_div">
+  <div class="col">
+    {% for i in data.first %}
+    <div class="mb-3">
+      <input type="checkbox" id="{{i}}" name="{{i}}" value="{{i}}" />
+      <label for="{{i}}"> {{i}}</label><br />
+    </div>
+    {% endfor %}
+  </div>
+  <div class="col">
+    {% for i in data.second %}
+    <div class="mb-3">
+      <input type="checkbox" id="{{i}}" name="{{i}}" value="{{i}}" />
+      <label for="{{i}}"> {{i}}</label><br />
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col submit_btn_div">
+    <button id="submit_btn">Submit</button>
+  </div>
+  <div class="col"></div>
+</div>
+
+{% endblock %}

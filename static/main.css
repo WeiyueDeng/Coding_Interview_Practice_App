@@ -1,0 +1,177 @@
+/* layout */
+body {
+  font-family: "Merriweather", serif !important;
+}
+.nav_div {
+  background-color: rgb(214, 237, 212);
+  padding: 15px 0px;
+  font-family: "Merriweather", serif !important;
+}
+.reset_btn_div {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.title_div {
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#reset_btn {
+  border-radius: 6px;
+  border: 1px solid black;
+  width: 60%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 22px;
+  font-family: "Merriweather", serif !important;
+  font-weight: 100;
+  word-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.main_img_div {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+#main_img {
+  width: 100%;
+}
+/* global */
+.submit_btn_div {
+  margin-top: 35px;
+  text-align: center;
+  word-spacing: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 30px;
+}
+#submit_btn {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: Arial;
+  font-size: 23px;
+  width: 70%;
+}
+/* difficuly page */
+.instruction_div {
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: "Merriweather", serif !important;
+}
+.difficulty_div {
+  padding: 40px 0px;
+  margin-bottom: 40px;
+}
+.easy_btn_div,
+.medium_btn_div,
+.hard_btn_div {
+  text-align: center;
+  font-family: "Merriweather", serif !important;
+}
+#easy_btn {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Merriweather", serif !important;
+  font-size: 25px;
+  background-color: rgb(220, 246, 217);
+  width: 90%;
+}
+#medium_btn {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Merriweather", serif !important;
+  font-size: 25px;
+  background-color: rgb(250, 246, 202);
+  width: 90%;
+}
+#hard_btn {
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Merriweather", serif !important;
+  font-size: 25px;
+  background-color: rgb(240, 186, 172);
+  width: 90%;
+}
+/* topic page */
+.data_structure_div {
+  text-align: left;
+  font-family: Arial;
+}
+.algorithm_div {
+  text-align: left;
+  font-family: Arial;
+}
+.categories_div {
+  text-align: left;
+  font-family: Arial;
+}
+.type_title {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+label {
+  font-size: 20px;
+  padding-left: 5px;
+  font-family: Arial;
+  display:inline;
+  margin-bottom:10px;
+}
+input {
+  background-color: rgb(237, 237, 237);
+  border: 1px solid black;
+}
+.customized_topic_div {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#title {
+    width:80%;
+}
+
+#hint {
+    margin-top:10px;
+}
+/* check page */
+.tips_div {
+  text-align: center;
+  color: rgb(121, 121, 121);
+  font-size: 20px;
+  word-spacing: 3px;
+  margin-top: 10px;
+  font-family: Arial;
+}
+#level {
+  color: rgb(249, 120, 120);
+}
+#topic {
+  color: rgb(138, 198, 250);
+}
+/* first question set */
+.tip_div {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  word-spacing: 5px;
+}
+.refine_title_div {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: Georgia;
+}
+.questions_div {
+  font-size: 18px;
+  margin-top: 10px;
+}

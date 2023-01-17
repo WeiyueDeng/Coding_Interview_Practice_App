@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'topic.js') }}"></script>
+
+<div class = "row instruction_div">
+    <div class = "col"></div>
+    <div class = "col instruction">Now, choose a topic</div>
+    <div class = "col"></div>
+</div>
+
+<div class = "row pb-3">
+    <div class = "col-2"></div>
+    <div class="col-3 data_structure_div">
+        <div class = "type_title">Data Structures</div>
+        {% for topic in data.Data_Structure %}
+        <input type="radio" id="{{topic}}" name="topic" value="{{topic}}">
+        <label for="{{topic}}">{{topic}}</label><br>
+        {% endfor %}
+    </div>
+    <div class="col-3 algorithm_div">
+        <div class = "type_title">Algorithms</div>
+        {% for topic in data.Algorithm %}
+        <input type="radio" id="{{topic}}" name="topic" value="{{topic}}">
+        <label for="{{topic}}">{{topic}}</label><br>
+        {% endfor %}
+    </div>
+    <div class="col-3 categories_div">
+        <div class = "type_title">Categories</div>
+        {% for topic in data.Categories %}
+        <input type="radio" id="{{topic}}" name="topic" value="{{topic}}">
+        <label for="{{topic}}">{{topic}}</label><br>
+        {% endfor %}
+    </div>
+    <div class = "col-1"></div>
+</div>
+<div class = "row customized_topic_div">
+    <div class = "col instruction">Not satisfied? Enter your own topic here: <input type="text" id="customized_topic_input"></div>
+</div>
+<div class = "row ">
+    <div class = "col"></div>
+    <div class = "col submit_btn_div">
+        <button id="submit_btn">Submit</button>
+    </div>
+    <div class = "col"></div>
+</div>
+{% endblock %}
