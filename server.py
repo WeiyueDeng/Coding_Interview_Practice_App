@@ -6,7 +6,7 @@ import openai
 import re
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "PUT YOUR OPENAI KEY HERE"
 
 
 defualt_topics={
